@@ -2,6 +2,13 @@ doctype html
 html
   head
     title= title
-    link(rel='stylesheet', href='/stylesheets/style.css')
+    meta(charset="UTF-8")
+    meta(name='viewport' content='width=device-width, initial-scale=1')
+    link(rel='stylesheet', href='/bootstrap/dist/css/bootstrap.css' type='text/css')
+    link(rel='stylesheet', href='/bootstrap/dist/css/bootstrap-theme.css' type='text/css')
+    link(rel='stylesheet', href='/css/style.css' type='text/css')
   body
+    include header
     block content
+    script(src='/requirejs/require.js' data-main='/js/main.js')
+    script(data-module='bootstrap')

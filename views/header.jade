@@ -1,0 +1,16 @@
+.header
+  .navbar.min-height.customize-navbar(role="navigation")
+    .container-fluid
+      .navbar-header
+        a(class="navbar-brand" href="/") Pup
+      .collapse.navbar-collapse
+        - var menus = ['Run', 'Save', 'Star', 'Fork']
+        ul(class="nav navbar-nav")
+          -for (var i = 0; i < menus.length; i++) {
+            li
+              a(href="javascript:;") #{menus[i]}
+          -}
+        ul(class="nav navbar-nav navbar-right")
+          li
+            a(href="/user/login/")
+              span(class="glyphicon glyphicon-user" aria-hidden="true")  Login
