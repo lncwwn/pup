@@ -7,6 +7,8 @@
     ],
     "signup": "Signup",
     "login": "Login",
+    "change your password": "change your password",
+    "remember me": "Remember me",
     "index": {
         "title": "Home page"
     },

@@ -1,0 +1,14 @@
+extends layout
+
+block content
+  form(class="form-area" action="/users/login/" method="post")
+    h3 User login
+    input(type="text" class="form-control" name="name" placeholder="Name" autofocus="true")
+    input(type="password" class="form-control" name="password" placeholder="Password")
+    .checkbox
+      label
+        input(type="checkbox" name="remember") #{remember_me}
+      button(class="btn btn-default btn-primary btn-block" type="submit") #{login}
+      .form-bottom
+        a(href="/user/signup") sign up or a(href="/user/change_password") #{change_your_password}
+  script(data-module="login")

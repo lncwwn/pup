@@ -7,6 +7,8 @@
 	],
 	"signup": "注册",
 	"login": "登录",
+	"change your password": "修改密码",
+	"remember me": "记住我",
 	"index": {
 		"title": "主页"
 	},
