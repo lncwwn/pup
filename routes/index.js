@@ -3,9 +3,9 @@ var router = express.Router();
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-    console.log(res.__('menus'));
+    console.log(res.__('index.title', 'title'));
     res.render('index', {
-            title: 'Home page|Pup',
+            title: res.__('title', 'Home page'),
             menus: res.__('menus'),
             signup: res.__('signup'),
             login: res.__('login')

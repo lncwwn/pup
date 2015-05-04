@@ -7,11 +7,15 @@
 	],
 	"signup": "注册",
 	"login": "登录",
-	"users": {
-		"signup": {},
-		"login": {
-			"title": "登录|Pup"
-		}
+	"index": {
+		"title": "主页"
 	},
-	"users.login.title": "users.login.title"
+	"users": {
+		"signup": {
+			"title": "注册"
+		},
+		"login": {
+			"title": "登录"
+		}
+	}
 }
