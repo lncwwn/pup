@@ -7,7 +7,12 @@ router.get('/', function(req, res, next) {
 });
 
 router.get('/login', function(req, res, next) {
-  res.render('index');
+    res.render('index', {
+            title: res.__('users.login.title'),
+            menus: res.__('menus'),
+            signup: res.__('signup'),
+            login: res.__('login')
+        });
 });
 
 

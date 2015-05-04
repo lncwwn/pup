@@ -4,7 +4,6 @@
       .navbar-header
         a(class="navbar-brand" href="/") Pup
       .collapse.navbar-collapse
-        - var menus = ['Latest', 'Article', 'Hottest', 'About me']
         ul(class="nav navbar-nav")
           -for (var i = 0; i < menus.length; i++) {
             li
@@ -13,4 +12,4 @@
         ul(class="nav navbar-nav navbar-right")
           li
             a(href="/users/login/")
-              span(class="glyphicon glyphicon-user" aria-hidden="true")  Login
+              span(class="glyphicon glyphicon-user" aria-hidden="true")  login
