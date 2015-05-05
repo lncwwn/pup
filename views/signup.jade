@@ -1,0 +1,16 @@
+extends layout
+
+block content1
+  link(rel="stylesheet", href="/css/signup.css" type="text/css")
+
+block content2
+  form.form-area(action="/user/signup/", method="post")
+    h3 #{user_signup}
+    input.form-control(type="text", name="name", placeholder="Name", autofocus="true")
+    input.form-control(type="password", name="password", placeholder="Password")
+    input.form-control(type="password", name="password_confirm", placeholder="Confirm password")
+    input.form-control(type="text", name="email", placeholder="Email address")
+    button.btn.btn-default.btn-primary.btn-block(type="submit") #{signup}
+    .form-bottom
+      | #{already_have_account}?
+      a(href="/user/login")  #{login}

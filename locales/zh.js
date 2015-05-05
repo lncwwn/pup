@@ -12,6 +12,7 @@
 	"user signup": "用户注册",
 	"change your password": "修改密码",
 	"remember me": "记住我",
+	"Already have account": "已有帐号",
 	"index": {
 		"title": "主页"
 	},

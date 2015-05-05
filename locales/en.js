@@ -12,6 +12,7 @@
     "user signup": "User signup",
     "change your password": "change your password",
     "remember me": "Remember me",
+    "Already have account": "Already have account",
     "index": {
         "title": "Home page"
     },
