@@ -2,15 +2,16 @@ extends layout
 
 block content
   form.form-area(action="/users/login/" method="post")
-    h3 User login
+    h3 #{user_login}
     input.form-control(type="text" name="name" placeholder="Name" autofocus="true")
     input.form-control(type="password" name="password" placeholder="Password")
     .checkbox
       label
-        input(type="checkbox" name="remember") #{remember_me}
+        input(type="checkbox" name="remember")
+        | #{remember_me}
       button.btn.btn-default.btn-primary.btn-block(type="submit") #{login}
       .form-bottom
-        a(href="/user/signup") sign up
-        | or
+        a(href="/user/signup") #{signup}
+        | #{or}
         a(href="/user/change_password") #{change_your_password}
   script(data-module="login")

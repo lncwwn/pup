@@ -7,6 +7,9 @@
 	],
 	"signup": "注册",
 	"login": "登录",
+	"or": "或者",
+	"user login": "用户登陆",
+	"user signup": "用户注册",
 	"change your password": "修改密码",
 	"remember me": "记住我",
 	"index": {

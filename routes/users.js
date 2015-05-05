@@ -11,6 +11,8 @@ router.get('/login', function(req, res, next) {
             menus: res.__('menus'),
             signup: res.__('signup'),
             login: res.__('login'),
+            or: res.__('or'),
+            user_login: res.__("user login"),
             change_your_password: res.__('change your password'),
             remember_me: res.__('remember me')
         });
