@@ -2,13 +2,13 @@
   .navbar.min-height.customize-navbar(role="navigation")
     .container-fluid
       .navbar-header
-        a(class="navbar-brand" href="/") Pup
+        a.navbar-brand(href="/") Pup
       .collapse.navbar-collapse
-        ul(class="nav navbar-nav")
+        ul.nav.navbar-nav
           each menu in menus
             li
-              a(href="javascript:;") #{menu}
-        ul(class="nav navbar-nav navbar-right")
+              a(href="javascript:;")= menu
+        ul.nav.navbar-nav.navbar-right
           li
             a(href="/users/login/")
-              span(class="glyphicon glyphicon-user" aria-hidden="true")  #{login}
+              span.glyphicon.glyphicon-user(aria-hidden="true")  #{login}
