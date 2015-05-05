@@ -19,7 +19,7 @@ define(['jquery'], function($) {
     for (var i = 0; i < modules.length; i++) {
         var module = modules[i],
             name = $(module).attr('data-module');
-        require([name], function(m) {
+        define([name], function(m) {
             if (m&&m.init) {
                 m.init();
             }
