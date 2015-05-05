@@ -7,8 +7,9 @@ html
     link(rel='stylesheet', href='/bootstrap/dist/css/bootstrap.css' type='text/css')
     link(rel='stylesheet', href='/bootstrap/dist/css/bootstrap-theme.css' type='text/css')
     link(rel='stylesheet', href='/css/style.css' type='text/css')
+    block content1
   body
     include header
-    block content
+    block content2
     script(src='/requirejs/require.js' data-main='/js/main.js')
     script(data-module='bootstrap')

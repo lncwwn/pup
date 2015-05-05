@@ -1,6 +1,9 @@
 extends layout
 
-block content
+block content1
+  link(rel='stylesheet', href='/css/login.css' type='text/css')
+
+block content2
   form.form-area(action="/users/login/" method="post")
     h3 #{user_login}
     input.form-control(type="text" name="name" placeholder="Name" autofocus="true")
