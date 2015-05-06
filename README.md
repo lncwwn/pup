@@ -1,2 +1,2 @@
 # pup
-A personal blog system
+A personal blog system, using nodeJs.
