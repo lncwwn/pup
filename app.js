@@ -9,6 +9,18 @@ var i18n = require('i18n');
 var routes = require('./routes/index');
 var users = require('./routes/users');
 
+var Sequelize = require('sequelize');
+var sequelize = new Sequelize('db_pup', 'root', 'lncwwn', {
+  host: 'localhost',
+  dialect: 'mysql',
+
+  pool: {
+    max: 5,
+    min: 0,
+    idle: 10000
+  }
+});
+
 var app = express();
 
 // locale setup

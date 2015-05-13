@@ -21,6 +21,10 @@ router.get('/login', function(req, res, next) {
         });
 });
 
+router.post('/login', function(req, res, next) {
+    res.redirect('/');
+});
+
 /**
  * user signup
  */
